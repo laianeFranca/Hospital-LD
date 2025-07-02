@@ -10,9 +10,9 @@
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>br.edu.ifrn</groupId>
-	<artifactId>higeia</artifactId>
+	<artifactId>Hospital LD</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>Higeia</name>
+	<name>Hospital LD</name>
 
 	<properties>
 		<java.version>17</java.version>
