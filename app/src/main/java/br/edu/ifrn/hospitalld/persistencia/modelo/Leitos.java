@@ -1,4 +1,4 @@
-package br.edu.ifrn.higeia.modelo;
+package br.edu.ifrn.hospitalld.modelo;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
