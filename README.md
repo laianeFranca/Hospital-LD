@@ -1,4 +1,9 @@
-# higeia.INFO4v.2025
-Higeia, uma holding familiar com participação em grandes empresas ao redor do mundo, nos selecionou (esta turma, esta sala de aula) para desenvolver uma solução capaz de tornar os processos relacionados aos serviços oferecidos pelo Hospital Lfranca mais ágeis, organizados, eficazes e eficientes. Dessa forma, buscamos evitar que decisões gerenciais sejam tomadas sem fundamentação adequada. Após debates com os envolvidos e partes interessadas, foram identificados requisitos essenciais para o desenvolvimento de um sistema que permita acompanhar o paciente desde sua chegada/acolhimento até a sua alta/saída, registrando todas as informações pertinentes e disponibilizando dados que orientem os procedimentos necessários.
-### interacao 
-Nesse primeiro momento, como uma prova de conceito e viabilidade arquitetural, trabalharemos a necessidade hospital em armazenar dados dos leitos em diferentes alas. O sistema deverá permitir o armazenamento de um número fixo, já que cada ala tem um número limitado de leitos.
+# Hospital LD
+
+O Hospital LD, localizado na região do Agreste do Rio Grande do Norte, nos escolheu (esta turma, esta sala de aula) para desenvolver uma solução que ajude a tornar os atendimentos hospitalares mais rápidos, organizados e eficientes.
+
+Nosso objetivo é evitar que decisões importantes sejam tomadas sem informações confiáveis. Por isso, estamos criando um sistema para acompanhar o paciente desde o momento em que chega ao hospital até o momento em que recebe alta, registrando tudo o que for necessário durante esse processo.
+
+## Primeira etapa
+
+Nesta primeira fase do projeto, estamos focando em uma parte essencial: o armazenamento dos dados dos leitos em diferentes alas do hospital. Cada ala tem uma quantidade fixa de leitos, e o sistema precisa respeitar esse limite.

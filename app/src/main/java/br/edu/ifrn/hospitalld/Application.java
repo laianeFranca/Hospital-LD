@@ -1,4 +1,4 @@
-package br.edu.ifrn.higeia;
+package br.edu.ifrn.hospitalld;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
