@@ -18,13 +18,13 @@ import lombok.Setter;
 public class Leito {
 
     @Id
-    @Column(length = 20, nullable = false)
-    private String codigo;
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
 
-    @Column(nullable = false)
-    private int numero;
+    @NotBlank(message = "A descrição é obrigatória")
+    @Column( name = "descricao", nullable = false, unique = true, length = 180)
+    private String descricao;
 
-    @Column(length = 30, nullable = false)
-    private String tipo;
-
+    @Min(value = 1, message = "O número de leitos deve ser maior que zero")
+    private int numeroLeitos;
 }
