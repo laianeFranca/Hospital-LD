@@ -10,16 +10,23 @@
 <div class="container mt-5">
     <h1 class="mb-4">Cadastrar Nova Ala</h1>
     <form th:action="@{/alas}" th:object="${ala}" method="post">
+        
         <div class="mb-3">
             <label for="descricao" class="form-label">Descrição</label>
-            <input type="text" class="form-control" id="descricao" th:field="*{descricao}" placeholder="Digite o nome da ala">
+            <input type="text" class="form-control" id="descricao" th:field="*{descricao}" placeholder="Ex: Ala Cirúrgica">
             <div class="text-danger" th:if="${#fields.hasErrors('descricao')}" th:errors="*{descricao}"></div>
         </div>
 
         <div class="mb-3">
-            <label for="numeroLeitos" class="form-label">Número de Leitos</label>
-            <input type="number" class="form-control" id="numeroLeitos" th:field="*{numeroLeitos}" placeholder="Ex: 10">
-            <div class="text-danger" th:if="${#fields.hasErrors('numeroLeitos')}" th:errors="*{numeroLeitos}"></div>
+            <label for="nome" class="form-label">Nome da Ala</label>
+            <input type="text" class="form-control" id="nome" th:field="*{nome}" placeholder="Ex: Cirurgia Geral">
+            <div class="text-danger" th:if="${#fields.hasErrors('nome')}" th:errors="*{nome}"></div>
+        </div>
+        
+        <div class="mb-3">
+            <label for="andar" class="form-label">Andar</label>
+            <input type="number" class="form-control" id="andar" th:field="*{andar}" placeholder="Ex: 2">
+            <div class="text-danger" th:if="${#fields.hasErrors('andar')}" th:errors="*{andar}"></div>
         </div>
 
         <button type="submit" class="btn btn-primary">Salvar</button>

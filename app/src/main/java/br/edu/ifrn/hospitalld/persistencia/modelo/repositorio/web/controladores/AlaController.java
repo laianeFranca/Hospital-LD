@@ -17,7 +17,7 @@ import jakarta.validation.Valid;
 
 @Controller
 @RequestMapping("/alas")
-public class AlaControler  {
+public class AlaController  { // Nome da classe corrigido
 
     @Autowired
     private AlaRepository alaRepository;
@@ -38,6 +38,8 @@ public class AlaControler  {
     @PostMapping
     public String salvar(@Valid @ModelAttribute Ala ala, BindingResult result, Model model) {
         // Valida duplicidade
+        // O erro "cannot find symbol" aqui era causado pela importação errada no AlaRepository.
+        // Agora deve funcionar.
         if (alaRepository.findByDescricao(ala.getDescricao()).isPresent()) {
             result.rejectValue("descricao", "erro.duplicado", "Já existe uma ala com essa descrição");
         }

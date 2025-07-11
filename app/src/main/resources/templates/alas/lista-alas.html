@@ -13,14 +13,16 @@
     <table class="table table-bordered table-striped">
         <thead>
         <tr>
+            <th>Descrição</th>
             <th>Nome</th>
-            <th>Número de Leitos</th>
+            <th>Andar</th>
         </tr>
         </thead>
         <tbody>
         <tr th:each="ala : ${alas}">
-            <td th:text="${ala.descricao}">Nome</td>
-            <td th:text="${ala.numeroLeitos}">Leitos</td>
+            <td th:text="${ala.descricao}">Descrição da Ala</td>
+            <td th:text="${ala.nome}">Nome da Ala</td>
+            <td th:text="${ala.andar}">Andar</td>
         </tr>
         </tbody>
     </table>

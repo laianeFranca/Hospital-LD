@@ -1,4 +1,4 @@
-package br.edu.ifrn.hospitalld.modelo;
+package br.edu.ifrn.hospitalld.persistencia.modelo; // Pacote corrigido
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
@@ -15,7 +15,7 @@ import lombok.Setter;
 @Setter
 @AllArgsConstructor
 @NoArgsConstructor
-public class Enfermeiro {
+public class Enfermeiro { // A classe é "Enfermeiro", então o arquivo deve ser "Enfermeiro.java"
 
     @Id
     @Column(name = "cpf", nullable = false, unique = true, length = 14)
