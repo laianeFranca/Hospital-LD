@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<body>
+    <h2>Cadastro de Médico</h2>
+    
+    <form th:action="@{/medicos/salvar}" th:object="${medico}" method="post">
+        
+        <label>Nome do Médico:</label><br>
+        <input type="text" th:field="*{nome}" required /><br><br>
+        
+        <label>CRM:</label><br>
+        <input type="text" th:field="*{crm}" required /><br><br>
+        
+        <label>Especialidade:</label><br>
+        <select th:field="*{especialidade}">
+            <option th:each="esp : ${especialidades}" 
+                    th:value="${esp.id}" 
+                    th:text="${esp.nome}">Cardiologia</option>
+        </select>
+        <br><br>
+        
+        <button type="submit">Salvar Médico</button>
+    </form>
+    <br>
+    <a href="/medicos">Cancelar</a>
+</body>
+</html>
