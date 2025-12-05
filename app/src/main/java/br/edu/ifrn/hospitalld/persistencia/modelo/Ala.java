@@ -30,5 +30,5 @@ public class Ala {
 
     @NotNull(message = "O andar é obrigatório")
     @Column(nullable = false)
-    private int andar;
+    private Integer andar;
 }

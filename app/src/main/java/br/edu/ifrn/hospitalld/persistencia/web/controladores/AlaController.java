@@ -33,7 +33,7 @@ public class AlaController {
     }
 
     // === FORMULÁRIO PARA NOVA ALA ===
-    @GetMapping("nova")
+    @GetMapping("/nova")
     public String mostrarFormularioNovaAla(Model model) {
         model.addAttribute("ala", new Ala());
         return "alas/formulario";

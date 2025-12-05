@@ -30,5 +30,5 @@ public class Leito {
     private String descricao;
 
     @Min(value = 1, message = "O número de leitos deve ser maior que zero")
-    private int numeroLeitos;
+    private Integer numeroLeitos;
 }
